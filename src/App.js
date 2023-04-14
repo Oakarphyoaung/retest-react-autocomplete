@@ -10,6 +10,13 @@ const App = () => {
   return (
     <div>
       <header>
+        <button
+          onClick={() => {
+            setBuss({ ...buss, name: "Line 40 I love code" });
+          }}
+        >
+          Change bus name
+        </button>
         <ul>
           <li>Bus Name:{buss.name}</li>
           <li>Stations:{buss.startStation}</li>
